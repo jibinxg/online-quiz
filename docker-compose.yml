@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: '2'
 services:
   web:
@@ -7,3 +8,14 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+=======
+version: '2'
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+>>>>>>> 4b4f00d6cb72a07a10395db5d57d9c3ba8819398
